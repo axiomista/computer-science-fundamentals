@@ -1,25 +1,40 @@
-# GDISF Teaching Materials
+# GDI Seattle Algorithms 101 - Forked from GDISF Teaching Materials
 
-Teaching materials for HTML, CSS, JS, and HTML5. We maintain our Open Source materials on this repo. 
+## Course Description
 
-## Contributing
+**What's an algorithm?** Besides being the answer to most interview questions, an algorithm is a way to solve a particular problem in programming. 
 
-[Read our docs](CONTRIBUTING.md)
+Google Maps uses an algorithm to calculate driving directions through 3 cities while avoiding highways. Amazon uses an algorithm to figure out exactly what product to recommend to you next so that you'll blindly one-click it. 
 
-## Curriculum Creation
-* Read [So You Want To Teach A Workshop](../../wiki/Teaching-a-Workshop)
-* Read our [Curriculum Creation](../../wiki/Curriculum-Creation) Guide in the wiki
-* Make sure that all curricula are in line with the GDI mission and an appropriate topic/level for our members. This may include:
-	* Topics that complement and expand our Front End Web Development curriculum
-	* Industry-relevant topics for advanced students (these students already work in the industry and range from Associate/Junior to Senior and above)
-	* Topics that students have requested to learn
-* Would you like to fork an existing workshop? Check out these resources:
-	[GDI Curriculum Review site](http://girldevelopit.github.io/gdi-curriculum-site/)
-	[girldevelopit.com](https://www.girldevelopit.com/materials)
-* Make a [Pull Request](https://github.com/gdisf/teaching-materials). You may want to use the `example/` directory to get started with the required templates. Your PR must must include:
-	- [ ] Description
-	- [ ] Lecture slides
-	- [ ] Hands-on exercises
-	- [ ] Solutions to exercises
-	- [ ] Follow Up Email
-* If you want your workshop to be included in our [national website](https://www.girldevelopit.com/materials), check out this [review rubric](https://docs.google.com/document/d/1zw7qX2EAO08rGAjl9683aVxtsAoZQLxmy7evu2my4OY/edit). Please note that this is not a requirement for inclusion in this repository.
+In this workshop, we will discuss what an algorithm is, introduce the idea of algorithmic complexity (big O notation), demonstrate sort and search algorithms (with a hands-on re-enactment), and finish with an overview of the many types of algorithms out there. 
+
+This workshop focuses on design-thinking for algorithms, which is a pre-requisite to expressing these ideas in code.
+
+
+### Prerequisites
+
+Attendees would benefit from a basic understanding of a programming language, like from JS 101, but that is not required.
+
+
+### Tech requirements:
+
+ - Your laptop (Mac, PC, or Linux are all okay).
+ - A modern web browser - we recommend Google Chrome
+ - A text editor. We recommend [Atom](http://atom.io)
+
+
+### Topics covered:
+* Big O notation
+* Hands-on re-enactment of sort and search
+
+### Schedule (To be determined if this will be a workshop or evening class)
+
+* 10:00 - 10:45 Introduction
+* 10:45 - 1:45 Defining an algorithm, time/space complexity, goal of algorithms
+* 1:45 - 12:00 break
+* 12:00 - 1:00 Sorting and bubble sort
+* 1:00 - 2:00 lunch
+* 2:00 - 3:15 More sorting, searching
+* 3:15 - 3:45 break
+* 3:45 - 4:45 More searching, primes
+* 4:45 - 5:00 Conclusion
