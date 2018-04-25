@@ -1,6 +1,8 @@
 # GDI Seattle Computer Science Fundementals
 ### Forked from GDISF Teaching Materials - Algorithms 101
 
+Slides and materials are hosted at [https://gdiseattle.github.io/gid-algorithms](https://gdiseattle.github.io/gdi-algorithms).
+
 ## Course Description
 
 **What's an algorithm?** Besides being the answer to most interview questions, an algorithm is a way to solve a particular problem in programming. 
