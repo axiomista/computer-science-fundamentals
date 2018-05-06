@@ -33,3 +33,14 @@ Math Prerequisites:
 * Big O notation
 * Searching and sorting
 * Data structures
+
+### About Spring 2018 Course
+[Meetup](https://www.meetup.com/Girl-Develop-It-Seattle/events/250076190/)
+
+#### Schedule
+This three-part class runs on Wednesdays from May 9th-May 23rd. This Meetup page will act as your RSVP for all three classes. Session dates and lessons are:
+* Class 1: Wednesday, May 9th, 6:00-8:00 PM
+* Class 2: Wednesday, May 16th, 6:00-8:00 PM
+* Class 3: Wednesday, May 23rd, 6:00-8:00 PM
+
+Location: WeWork Denny Triangle - Be sure to bring photo ID with you to enter facility.
