@@ -53,7 +53,7 @@
         <div class="slides">
             <!-- Opening -->
             <section>
-                <h1>Intro to Algorithms</h1>
+                <h1>Computer Science Fundementals</h1>
             </section>
             <section>
               <h3>Welcome!</h3>
@@ -87,6 +87,7 @@
                     <li>What is an algorithm?</li>
                     <li>Intro to algorithmic complexity (how good is an algorithm)</li>
                     <li>Big O notation</li>
+                    <li>Analyzing Arrays</li>
                 </ul>
             </section>
 
@@ -187,7 +188,7 @@
                 <h2>Exercise time!</h2>
                 <h3 class='highlight'>What is an algorithm you use?</h3>
                 <br>
-                <p>Write down steps for several versions of an algorithm to solve an everyday problem</p>
+                <p>Find a partner and pick a problem. Come up with multiple versions of an algorithm and write them down.</p>
                 <br>
                 <p class="left pink">Ideas:</p>
                  <br />
@@ -529,67 +530,6 @@ for shirt in shirts_pile:
             </section>
 
             <section>
-              <h2>Time Complexity</h2>
-              <pre><table style="margin:auto; background:white; padding: 5px; font-size:smaller; width: 100%">
-                <thead style="font-weight: bold;">
-                    <tr>
-                        <th>Order of growth</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Example</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>constant</td>
-                        <td>statement</td>
-                        <td>add two numbers</td>
-                    </tr>
-                    <tr>
-                        <td>logN</td>
-                        <td>logarithmic</td>
-                        <td>divide in half</td>
-                        <td>binary search</td>
-                    </tr>
-                    <tr>
-                        <td>N</td>
-                        <td>linear</td>
-                        <td>loop</td>
-                        <td>find the maximum</td>
-                    </tr>
-                    <tr>
-                        <td>NlogN</td>
-                        <td>linearithmic</td>
-                        <td>divide + conquer</td>
-                        <td>merge sort</td>
-                    </tr>
-                    <tr>
-                        <td>N<sup>2</sup></td>
-                        <td>quadratic</td>
-                        <td>double loop</td>
-                        <td>check all pairs</td>
-                    </tr>
-                    <tr>
-                        <td>N<sup>3</sup></td>
-                        <td>cubic</td>
-                        <td>triple loop</td>
-                        <td>check all triples</td>
-                    </tr>
-                    <tr>
-                        <td>2<sup>N</sup></td>
-                        <td>exponential</td>
-                        <td>exhaustive search</td>
-                        <td>check all subsets</td>
-                    </tr>
-              </table></pre>
-            </section>
-
-            <section>
-                <img src="images/big-o-graph.png">
-            </section>
-
-            <section>
                 <h1>Question Time!</h1>
                 <p>We're going to determine the time complexity of some algorithms</p>
                 <br />
@@ -660,7 +600,7 @@ for shirt in shirts_pile:
             </section>
 
             <section>
-                <h2>Example: Arrays/List</h2>
+                <h2>Arrays/List</h2>
                 <img src="images/list.png">
             </section>
 
@@ -728,6 +668,8 @@ for (var i = 0; i &lt; things.length; i++) {
                 <p>O(n<sup>2</sup>) - Quadratic</p>
             </section>
 
+            <!-- to do: time content to see if we should add data structures here-->
+            <!--
             <section>
                 <h2>More data structures</h2>
                 <h3>Example: Dictionaries/ Objects/ Hash Maps/ Maps</h3>
@@ -743,26 +685,9 @@ myObject = { key : value,
                 </pre>
                 </div>
             </section>
+            -->
 
             <!-- to do: add questions about hash map lookup and other data structures -->
-
-
-            <!-- TO DO move to another class -->
-            <section>
-                <h2>Abstract Data Structures</h2>
-                <div style="float: left; width: 50%">
-                    <p>Linked List</p>
-                    <img style="width: 80%" src="images/linked_list.png">
-                    <p>Tree</p>
-                    <img style="width: 70%" src="images/tree.png">
-                </div>
-                <div style="float: left; width: 50%">
-                    <p>Graph</p>
-                    <img style="width: 60%" src="images/graph.png">
-                    <p>Queue</p>
-                    <img style="width: 60%" src="images/queue.png">
-                </div>
-            </section>
 
 
            <!-- START  OF SPACE COMPLEXITY -->
@@ -870,6 +795,83 @@ myObject = { key : value,
                     <li>Optimization: Making an algorithm take less time or space</li>
                     <li>Data Structure: A way to organize data</li>
                 </ul>
+            </section>
+
+            <section>
+              <h2>Time Complexity</h2>
+              <pre><table style="margin:auto; background:white; padding: 5px; font-size:smaller; width: 100%">
+                <thead style="font-weight: bold;">
+                    <tr>
+                        <th>Order of growth</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>constant</td>
+                        <td>statement</td>
+                        <td>add two numbers</td>
+                    </tr>
+                    <tr>
+                        <td>logN</td>
+                        <td>logarithmic</td>
+                        <td>divide in half</td>
+                        <td>binary search</td>
+                    </tr>
+                    <tr>
+                        <td>N</td>
+                        <td>linear</td>
+                        <td>loop</td>
+                        <td>find the maximum</td>
+                    </tr>
+                    <tr>
+                        <td>NlogN</td>
+                        <td>linearithmic</td>
+                        <td>divide + conquer</td>
+                        <td>merge sort</td>
+                    </tr>
+                    <tr>
+                        <td>N<sup>2</sup></td>
+                        <td>quadratic</td>
+                        <td>double loop</td>
+                        <td>check all pairs</td>
+                    </tr>
+                    <tr>
+                        <td>N<sup>3</sup></td>
+                        <td>cubic</td>
+                        <td>triple loop</td>
+                        <td>check all triples</td>
+                    </tr>
+                    <tr>
+                        <td>2<sup>N</sup></td>
+                        <td>exponential</td>
+                        <td>exhaustive search</td>
+                        <td>check all subsets</td>
+                    </tr>
+              </table></pre>
+            </section>
+
+            <section>
+                <img src="images/big-o-graph.png">
+            </section>
+
+            <section>
+                <h2>Abstract Data Structures</h2>
+                <div style="float: left; width: 50%">
+                    <p>Linked List</p>
+                    <img style="width: 80%" src="images/linked_list.png">
+                    <p>Tree</p>
+                    <img style="width: 70%" src="images/tree.png">
+                </div>
+                <div style="float: left; width: 50%">
+                    <p>Graph</p>
+                    <img style="width: 60%" src="images/graph.png">
+                    <p>Queue</p>
+                    <img style="width: 60%" src="images/queue.png">
+                </div>
             </section>
 
             <section>
