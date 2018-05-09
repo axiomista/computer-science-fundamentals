@@ -52,51 +52,102 @@
         <!-- Any section element inside of this container is displayed as a slide -->
         <div class="slides">
             <!-- Opening -->
-            <div class="reveal">
-                <!-- Any section element inside of this container is displayed as a slide -->
-                <div class="slides">
-                  <!-- Opening slide -->
-                    <section>
-                      <img src = "../common/img/circle-gdi-logo.png">
-                      <h3>Computer Science Fundementals</h3>
-                      <a href="class1.html">Class 1</a>
-                      <a href="class2.html">Class 2</a>
-                      <a href="class3.html">Class 3</a>
-                      <a href="class4.html">Class 4</a>
-                    </section>
+            <section>
+                <h1>Class 1 Homework</h1>
+            </section>
+
+            <section>
+                <h1>Practice from today's material</h1>
+            </section>
+
+            <section>
+                <h2>Expression to Big 0</h2>
+                <p>
+                    The following expressions represent the amount of time an algorithm takes to run, in terms of the input, N.
+                </p>
+                <p>
+                    What is the Big O runtime complexity of each algorithm?
+                </p>
+                <br>
+                <div class="fragment">
+                    <p>2N + 500 + 9N</p>
+                    <p>3</p>
+                    <p>900N + 1</p>
+                    <p>4N<sup>2</sup> + N + 3N<sup>2</sup> + 4</p>
+                    <p>(1/2)N + 1</p>
+                    <p>N + N<sup>2</sup> + N<sup>3</sup></p>
                 </div>
-            </div>
-            <section>
-                <h3>Schedule</h3>
-    <pre><code>
-    Class 1
-        Introduction
-        Defining an algorithm / goals of algorithms
-        Time Complexity
-        Space Complexity
-        Data Structures - Arrays
-
-    Class 2
-        Review time and space complexity
-        Searching - Linear & Binary
-        Sorting (Selection, Insert, Bucket, Bubble, Merge)
-
-    Class 3
-        Review time and space complexity
-        Data structures - dictionaries
-        Algorithms with dictionaries
-    </pre></code>
             </section>
+
             <section>
-                <h2>What we'll be covering in this class</h2>
-                <ul>
-                    <li>what is an algorithm?</li>
-                    <li>intro to algorithmic complexity 
-                        <br>(how good is an algorithm)</li>
-                    <li>demonstrate sort and search algorithms 
-                        <br>(the classics)</li>
-                </ul>
+                <h2>Example</h2>
+                <p>
+                    The following expressions represent the amount of time an algorithm takes to run, in terms of the input, N.
+                </p>
+                <p>
+                    What is the Big O runtime complexity of each algorithm?
+                </p>
+                <br>
+                <div class="fragment">
+                    <p>500N + 12</p>
+                    <br>
+                    <p class="fragment">&#x2192; O(500N + 12)</p>
+                    <p class="fragment">&#x2192; O(500N)</p>
+                    <p class="fragment">&#x2192; O(N)</p>
+                    <br>
+                    <p class="red fragment">Linear time</p>
+                </div>
             </section>
+
+            <section>
+                <h2>Analyzing Code</h2>
+            </section>
+
+            <section>
+                <p>What is the time complexity of this code sample?</p>
+                <p>What is the space complexity of this code sample?</p>
+                <pre><code>
+var listOfFriends = [];
+for (var i = 0; i &lt; N; i++) {
+    listOfFriends.push("friend" + i);
+}
+                </code></pre>
+            </section>
+
+            <section>
+                <p>What is the time complexity of this code sample?</p>
+                <p>What is the space complexity of this code sample?</p>
+                <pre><code>
+var firstName = "cat";
+var lastName = "dog";
+console.log(firstName + lastName);
+                </code></pre>
+            </section>
+
+            <section>
+                <p>What is the time complexity of this code sample?</p>
+                <p>What is the space complexity of this code sample?</p>
+                <pre><code>
+var listOfFriends = ["dog", "cat", "pig", "goat", "bird"];
+var listOfFood = ["pizza", "ramen", "doughnut", "french fries"];
+
+for (var friendIndex = 0; friendIndex &lt; listOfFriends.length; friendIndex++) {
+    for(var foodIndex = 0; foodIndex &lt; listOfFood.length; foodIndex++) {
+        console.log("I'm giving " + listOfFood[foodIndex] + " to the " + listOfFriends[friendIndex]);
+    }
+}
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>Prep for next class</h2>
+                <p>In the next class we will be covering search and sort. Some search and sort algorithms have a logorithmic run time or O(logN).</p>
+                <br/>
+                <p>If you would like to review algorithms on your own, you can review them with <a href="https://www.khanacademy.org/math/algebra2/exponential-and-logarithmic-functions/introduction-to-logarithms/v/logarithms">this Khan Academy video</a>.</p>
+                <br/>
+                <p>Don't worry if this concept is a bit fuzzy, we'll cover the relevant parts in class.</p>
+            </section>
+
 
         </div>
         <footer>
