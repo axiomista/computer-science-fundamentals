@@ -1,4 +1,4 @@
-# GDI Seattle Computer Science Fundementals
+# GDI Seattle Computer Science Fundamentals
 ### Forked from GDISF Teaching Materials - Algorithms 101
 
 Slides and materials are hosted at [https://gdiseattle.github.io/computer-science-fundamentals/](https://gdiseattle.github.io/computer-science-fundamentals/).
