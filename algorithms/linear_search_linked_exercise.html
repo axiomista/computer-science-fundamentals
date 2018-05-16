@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+    <h2>Linear Search Exercise</h2>
+    <h3>Write the Linear Search algorithm for linked lists!</h3>
+    <ul>
+        <li>Pair up!</li>
+        <li>Write pseudocode for this problem!</li>
+        <li>Now write the code for this algorithm.  You can use <a href="http://repl.it">repl.it</a> or some other environment to run and test code.</li>
+        <li>The function you write should accept as parameters linked list and a value you want to find.  The function should return the node of the found value, and null if not found.</li>
+    </ul>
+    <br>
+    Stumped? <a onclick="showHints()">Click here</a> for some hints
+    <br>
+    <div id="hints" style="display:none;"">
+        <ol>
+            <li>Try using a variable to keep track of the current node.</li>
+            <li><p><a href="https://www.codefellows.org/blog/implementing-a-singly-linked-list-in-python/">Full solution in python</a></p></li>
+        </ol>
+    </div>
+    <br>
+    <button onclick='showSolution()'>See solution</button>
+    <br>
+    <div id="solution" style="display:none;">
+        <pre>
+def search(list):
+    current = list.head
+    found = False
+    while current and found is False:
+        if current.data() == data:
+            found = True
+        else:
+            current = current.next
+    if current is None:
+        return null
+    return current
+        </pre>
+    </div>
+
+    <script>
+
+        function showSolution() {
+          if (confirm('You surrrrre?')) {
+            document.getElementById('solution').style.display = 'block';
+          }
+        }
+
+        function showHints() {
+            document.getElementById('hints').style.display = 'block';
+        }
+  </script>
+
+</body>
+</html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Homework 1</title>
+    <title>Homework 2</title>
 
     <meta name="description" content="">
     <meta name="author" content="Pamela Fox">
@@ -53,100 +53,64 @@
         <div class="slides">
             <!-- Opening -->
             <section>
-                <h1>Class 1 Homework</h1>
+                <h1>Class 2 Homework</h1>
             </section>
 
             <section>
-                <h1>Practice from today's material</h1>
-            </section>
+                <h2>Matrices</h2>
+                <p>Check given matrix is magic square or not</p>
+                <pre>
+                    <code>
+Input : n = 3
+  2   7   6
+  9   5   1
+  4   3   8
+Output : Magic matrix
+Explanation:In matrix sum of each
+row and each column and diagonals sum is 
+same = 15.
 
-            <section>
-                <h2>Expression to Big 0</h2>
+Input : n = 3
+  1   2   3 
+  4   5   6
+  7   8   9
+Output : Not a Magic Matrix
+Explanation:In matrix sum of each
+row and each column and diagonals sum is
+not same.
+                    </code>
+                </pre>
                 <p>
-                    The following expressions represent the amount of time an algorithm takes to run, in terms of the input, N.
+                    <a href="https://www.geeksforgeeks.org/check-given-matrix-is-magic-square-or-not/">Solution</a>
                 </p>
-                <p>
-                    What is the Big O runtime complexity of each algorithm?
-                </p>
-                <br>
-                <div class="fragment">
-                    <p>2N + 500 + 9N</p>
-                    <p>3</p>
-                    <p>900N + 1</p>
-                    <p>4N<sup>2</sup> + N + 3N<sup>2</sup> + 4</p>
-                    <p>(1/2)N + 1</p>
-                    <p>N + N<sup>2</sup> + N<sup>3</sup></p>
-                </div>
             </section>
 
             <section>
-                <h2>Example</h2>
-                <p>
-                    The following expressions represent the amount of time an algorithm takes to run, in terms of the input, N.
-                </p>
-                <p>
-                    What is the Big O runtime complexity of each algorithm?
-                </p>
-                <br>
-                <div class="fragment">
-                    <p>500N + 12</p>
-                    <br>
-                    <p class="fragment">&#x2192; O(500N + 12)</p>
-                    <p class="fragment">&#x2192; O(500N)</p>
-                    <p class="fragment">&#x2192; O(N)</p>
-                    <br>
-                    <p class="red fragment">Linear time</p>
-                </div>
+                <h1>Linked lists</h1>
+                <p>Write a function (in any language) that takes a linked list and returns the length</p>
             </section>
 
             <section>
-                <h2>Analyzing Code</h2>
+                <h1>Binary search tree</h1>
+                <p>Given a binary search tree and a key, write a function (in any language) that returns true if the key is in the tree.</p>
+                <img style="width: 70%" src="images/tree.png">
             </section>
 
             <section>
-                <p>What is the time complexity of this code sample?</p>
-                <p>What is the space complexity of this code sample?</p>
-                <pre><code>
-var listOfFriends = [];
-for (var i = 0; i &lt; N; i++) {
-    listOfFriends.push("friend" + i);
-}
-                </code></pre>
+                <p>Example of a node for a <a href="https://en.wikipedia.org/wiki/Binary_search_tree">binary search tree</a></p>
+                <pre>
+                    <code>
+struct TreeNode {
+    int key;
+    int value;
+    struct TreeNode *left;
+    struct TreeNode *right;
+};
+                    </code>
+                </pre>
             </section>
 
-            <section>
-                <p>What is the time complexity of this code sample?</p>
-                <p>What is the space complexity of this code sample?</p>
-                <pre><code>
-var firstName = "cat";
-var lastName = "dog";
-console.log(firstName + lastName);
-                </code></pre>
-            </section>
-
-            <section>
-                <p>What is the time complexity of this code sample?</p>
-                <p>What is the space complexity of this code sample?</p>
-                <pre><code>
-var listOfFriends = ["dog", "cat", "pig", "goat", "bird"];
-var listOfFood = ["pizza", "ramen", "doughnut", "french fries"];
-
-for (var friendIndex = 0; friendIndex &lt; listOfFriends.length; friendIndex++) {
-    for(var foodIndex = 0; foodIndex &lt; listOfFood.length; foodIndex++) {
-        console.log("I'm giving " + listOfFood[foodIndex] + " to the " + listOfFriends[friendIndex]);
-    }
-}
-                </code></pre>
-            </section>
-
-            <section>
-                <h2>Prep for next class</h2>
-                <p>In the next class we will be covering search and sort. Some search and sort algorithms have a logorithmic run time or O(logN).</p>
-                <br/>
-                <p>If you would like to review algorithms on your own, you can review them with <a href="https://www.khanacademy.org/math/algebra2/exponential-and-logarithmic-functions/introduction-to-logarithms/v/logarithms">this Khan Academy video</a>.</p>
-                <br/>
-                <p>Don't worry if this concept is a bit fuzzy, we'll cover the relevant parts in class.</p>
-            </section>
+            
 
 
         </div>
