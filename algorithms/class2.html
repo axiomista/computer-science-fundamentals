@@ -450,6 +450,91 @@ function selectionSort(array) {
 
             <!-- END OF SORTING -->
 
+            <section>
+                <h1>Searching with other data structures</h1>
+            </section>
+
+            <section>
+                <h1>Matrices</h1>
+                <p>Arrays of arrays</p>
+            </section>
+
+            <section>
+                <h2>Exercise</h2>
+                <p>Linear search for matrices</p>
+                <p>Find maximum element of each row in a matrix</p>
+                <pre>
+                    <code>
+Input :  [1, 2, 3]
+         [1, 4, 9]
+         [76, 34, 21]
+Output :
+[3, 9, 76]
+
+Input : [1, 2, 3, 21]
+        [12, 1, 65, 9]
+        [1, 56, 34, 2]
+Output :
+[21, 65, 56]
+                    </code>
+                </pre>
+                <p>
+                    <a href="https://www.geeksforgeeks.org/find-maximum-element-row-matrix/">Solution</a>
+                </p>
+            </section>
+
+            <section>
+                <h2>Searching with matrices</h2>
+                <p class='fragment'>What is the time complexity?</p>
+                <p class='fragment'>O(n*m)</p>
+                <br />
+                <p class='fragment'>What is the space complexity?</p>
+                <p class='fragment'>O(n)</p>
+            </section>
+
+            <section>
+                <h1>Linked Lists</h1>
+            </section>
+
+            <section>
+                <h2>Linked Lists</h2>
+                <img style="width: 80%" src="images/linked_list.png">
+                <p><a href="https://en.wikipedia.org/wiki/Linked_list">Linked lists wikipedia</a></p>
+            </section>
+
+            <section>
+                <h3>Linked list implementation</h3>
+                <pre><code>
+class Node(object):
+
+    def __init__(self, data=None, next_node=None):
+        self.data = data
+        self.next_node = next_node
+
+    def get_data(self):
+        return self.data
+
+    def get_next(self):
+        return self.next_node
+
+    def set_next(self, new_next):
+        self.next_node = new_next
+                </pre></code>
+                <p><a href="https://www.codefellows.org/blog/implementing-a-singly-linked-list-in-python/">Example in python</a></p>
+            </section>
+
+            <section>
+                <h2>Exercise</h2>
+                <h3>Writing Linear Search in Linked Lists</h3>
+                <br>
+                <a href="linear_search_linked_exercise.html">Click here!</a>
+            </section>
+
+            <section>
+                <h2>Complexity of linked lists</h2>
+                <a href="https://en.wikipedia.org/wiki/Linked_list">Wikipedia</a>
+            </section>
+
             <!-- Add resources I like for white boarding-->
             <section>
                 <h2>Resources</h2>
