@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+    <h2>Letter count Exercise</h2>
+    <h3>Write a function that counts how many of each English letters appears in a string</h3>
+    <ul>
+        <li>Pair up!</li>
+        <li>Write pseudocode for this problem!</li>
+        <li>Now write the code for this algorithm.  You can use <a href="http://repl.it">repl.it</a> or some other environment to run and test code.</li>
+        <li>The function you write should accept as parameters a string.  The function print out a letter count for each letter.</li>
+    </ul>
+    <br>
+    Stumped? <a onclick="showHints()">Click here</a> for some hints
+    <br>
+    <div id="hints" style="display:none;"">
+        <ol>
+            <li>Try using a dictionary!</li>
+        </ol>
+    </div>
+    <br>
+    <button onclick='showSolution()'>See solution</button>
+    <br>
+    <div id="solution" style="display:none;">
+        <pre>
+    import string
+    def LetterCount(str):
+            str= str.lower().strip()
+            str = str.strip(string.punctuation)
+            list1=list(str)
+            lcDict= {}
+            for l in list1:
+                    if l.isalpha():
+                            if l in lcDict:
+                                    lcDict[l] +=1
+                            else:
+                                    lcDict[l]= 1
+            print lcDict
+
+    LetterCount("Abracadabra there it is!")
+        </pre>
+
+    <a href="https://stackoverflow.com/questions/5664494/letter-count-dictionary?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa">Stack overflow source</a>
+    </div>
+
+    <script>
+
+        function showSolution() {
+          if (confirm('You surrrrre?')) {
+            document.getElementById('solution').style.display = 'block';
+          }
+        }
+
+        function showHints() {
+            document.getElementById('hints').style.display = 'block';
+        }
+  </script>
+
+</body>
+</html>
