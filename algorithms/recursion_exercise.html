@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+    <h2>Adding up all numbers in a list</h2>
+    <ul>
+        <li>Pair up!</li>
+        <li>Write pseudocode for this problem!</li>
+        <li>Now write the code for this algorithm.  You can use <a href="http://repl.it">repl.it</a> or some other environment to run and test code.</li>
+        <li>The function you write should accept an array as its parameter.  The function should return the total value of all the integers in the array.</li>
+    </ul>
+    <br>
+    Stumped? <a onclick="showHints()">Click here</a> for some hints
+    <br>
+    <div id="hints" style="display:none;"">
+        <ol>
+            <li>Try solving the first part of the problem and adding it to the rest.</li>
+        </ol>
+    </div>
+    <br>
+    <button onclick='showSolution()'>See solution</button>
+    <br>
+    <div id="solution" style="display:none;">
+        <pre>
+def getSum(piece):
+    if len(piece)==0:
+        return 0
+    else:
+        return piece[0] + getSum(piece[1:]) 
+print getSum([1, 3, 4, 2, 5])
+        </pre>
+
+    <a href="https://stackoverflow.com/questions/35194767/python-get-sum-of-a-list-of-numbers-with-recursion?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa">Stack overflow source</a>
+    </div>
+
+    <script>
+
+        function showSolution() {
+          if (confirm('You surrrrre?')) {
+            document.getElementById('solution').style.display = 'block';
+          }
+        }
+
+        function showHints() {
+            document.getElementById('hints').style.display = 'block';
+        }
+  </script>
+
+</body>
+</html>
